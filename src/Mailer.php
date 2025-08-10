@@ -18,6 +18,7 @@ use Symfony\Component\Mailer\Transport\SendmailTransportFactory;
 use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransportFactory;
 use Symfony\Component\Mailer\Transport\TransportInterface;
 use Symfony\Component\Mailer\Bridge\Amazon\Transport\SesTransportFactory;
+use Symfony\Component\Mailer\Bridge\Azure\Transport\AzureTransportFactory;
 use Symfony\Component\Mailer\Bridge\Google\Transport\GmailTransportFactory;
 use Symfony\Component\Mailer\Bridge\Infobip\Transport\InfobipTransportFactory;
 use Symfony\Component\Mailer\Bridge\Mailchimp\Transport\MandrillTransportFactory;
@@ -103,6 +104,7 @@ class Mailer extends BaseMailer
                 EsmtpTransportFactory::class,
                 NativeTransportFactory::class,
                 SesTransportFactory::class,
+                AzureTransportFactory::class,
                 GmailTransportFactory::class,
                 InfobipTransportFactory::class,
                 MandrillTransportFactory::class,
