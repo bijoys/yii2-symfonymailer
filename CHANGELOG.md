@@ -4,6 +4,8 @@ Yii Framework 2 Symfony mailer extension Change Log
 4.0.1 under development
 -----------------------
 
+- Enh #80: Add support for Azure Email Communication Services (bijoys)
+
 4.0.0 Jan 29, 2024
 ------------------
 
